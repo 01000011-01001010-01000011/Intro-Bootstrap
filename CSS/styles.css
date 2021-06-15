@@ -1,34 +1,21 @@
 @media (min-width: 400px){
-
-    .main-content{
-
-        border: none;
-  
-    }
-
+   
     .corporate{
-        margin-bottom: 2px;
-        /*border: 10px solid red;      */
-        
+
+        margin-bottom: 2px;                
+
     }
 
     .history{
-        margin-bottom: 5px;
+     
         border-bottom: 1px ridge;
+
     }
   
 }
 
 @media(min-width: 580px){
-
-    .main-content{
-        /*border: 10px solid red;*/
-    }
-
-    .corporate{
-        border: none;
-    }
-
+ 
     .aboutus, .history{
      
         border-bottom: none;
