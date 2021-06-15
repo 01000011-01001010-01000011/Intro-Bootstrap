@@ -1,0 +1,67 @@
+@media (min-width: 400px){
+
+    .main-content{
+
+        border: none;
+  
+    }
+
+    .corporate{
+        margin-bottom: 2px;
+        /*border: 10px solid red;      */
+        
+    }
+
+    .history{
+        margin-bottom: 5px;
+        border-bottom: 1px ridge;
+    }
+  
+}
+
+@media(min-width: 580px){
+
+    .main-content{
+        /*border: 10px solid red;*/
+    }
+
+    .corporate{
+        border: none;
+    }
+
+    .aboutus, .history{
+     
+        border-bottom: none;
+        
+    }
+
+}
+
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: #9575CD;
+    color: floralwhite;
+}
+
+.row-header{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.row-content{         
+    margin: 50px 0px 50px 0px;
+    min-height: 400px;
+}
+
+.footer{
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0;
+    color: #0f0f0f;
+}
