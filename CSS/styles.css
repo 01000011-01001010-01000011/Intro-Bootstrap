@@ -1,32 +1,19 @@
-@media (min-width: 400px){
-   
-    .corporate{
+body{
 
-        margin-bottom: 2px;                
+    padding: 50px 0 0 0;
+    z-index: 0;
 
-    }
-
-    .history{
-     
-        border-bottom: 1px ridge;
-
-    }
-  
 }
 
-@media(min-width: 580px){
- 
-    .aboutus, .history{
-     
-        border-bottom: none;
-        
-    }
+.navbar-dark{
+
+    background-color: #512DA8;
 
 }
 
 .jumbotron{
     padding: 70px 30px 70px 30px;
-    margin: 0px auto;
+    margin: 0 auto;
     background-color: #9575CD;
     color: floralwhite;
 }
@@ -37,8 +24,9 @@
 }
 
 .row-content{         
-    margin: 0 auto;
+    margin: 0 0 0 20px;
     padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
     min-height: 400px;
 }
 
@@ -50,6 +38,7 @@
 
 .address{
     font-size: 80%;
-    margin: 0;
+    margin: 0 auto;
     color: #0f0f0f;
 }
+
