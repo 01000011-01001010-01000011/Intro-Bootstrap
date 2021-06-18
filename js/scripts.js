@@ -20,7 +20,6 @@ $(document).ready(function(){
 
 */
 
-
 $(document).ready(function(){
 
     $("#mycarousel").carousel({ interval: 2000 });
@@ -48,4 +47,17 @@ $(document).ready(function(){
 
     });
 
+    $('#loginBtn').click(function () {
+
+        $('#loginModal').modal("show");
+        
+    });
+
+    $('#reservationBtn').click(function(){
+
+        $('#reservationModal').modal("show");
+
+    });
+
 });
+

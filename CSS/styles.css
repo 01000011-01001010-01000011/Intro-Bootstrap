@@ -37,26 +37,37 @@ body {
   border-right: 1px solid #ddd;
   padding: 10px; }
 
-#loginBtn {
-  font-size: 1.5em;
-  color: #ffffff; }
+/*** For login and reserve modals ***/
+.modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  .modal-header button {
+    color: floralwhite; }
 
-#loginBtn:hover {
-  cursor: pointer; }
+.modal-body {
+  background-color: #9575CD; }
 
+/*** Login Form ***/
 #loginForm {
   width: 50%;
   margin: 5% 0 10% 25%;
   border: 2px solid #dbdbdb;
   border-radius: 5%; }
 
+#loginBtn {
+  color: #ffffff; }
+
+#loginBtn:hover {
+  cursor: pointer; }
+
 #loginCancelBtn {
-  font-size: 1.5em;
   background-color: #bdbdbd; }
 
 #loginBtn, #loginCancelBtn {
+  font-size: 1.5em;
   border-radius: 5%; }
 
+/*** Carousel ***/
 .carousel {
   background: #512DA8; }
   .carousel .carousel-item {
