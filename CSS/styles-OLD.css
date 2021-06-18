@@ -1,0 +1,128 @@
+body{
+
+    padding: 50px 0 0 0;
+    z-index: 0;
+
+}
+
+.navbar-dark{
+
+    background-color: #512DA8;
+
+}
+
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0 auto;
+    background-color: #9575CD;
+    color: floralwhite;
+}
+
+.row-header{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.row-content{         
+    margin: 0 0 0 20px;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer{
+    background-color: #D1C4E9;
+    margin: 100px 0px 50px 0px;
+    padding: 20px 0px 20px 0px;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0 auto;
+    color: #0f0f0f;
+}
+
+.tab-content{
+
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    padding: 10px;
+
+}
+
+#loginBtn{
+
+    font-size: 1.5em;
+
+    color: #ffffff;
+
+}
+
+#loginBtn:hover{
+
+    cursor: pointer;
+
+}
+
+#loginForm{
+
+    width: 50%;
+
+    margin: 5% 0 10% 25%;
+
+    border: 2px solid rgb(219, 219, 219);
+
+    border-radius: 5%;
+
+}
+
+#loginCancelBtn{
+
+    font-size: 1.5em;
+
+    background-color: #bdbdbd;
+
+}
+
+#loginBtn, #loginCancelBtn{
+
+    border-radius: 5%;
+
+}
+
+
+.carousel{
+
+    background: #512DA8;
+
+}
+
+.carousel-item{
+
+    height: 300px;
+
+}
+
+.carousel-item img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+
+}
+
+#carouselButton{
+
+    position: absolute;    
+    right: 0px;
+    bottom: 0px;    
+
+    margin: 2px;
+
+    z-index: 1;
+
+}
+
