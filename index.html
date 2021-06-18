@@ -8,16 +8,16 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <!-- Bootstrap & Font Awesome CSS -->
-
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+                
         <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
    
         <link href="CSS/styles.css" rel="stylesheet">
 
-        <script src="js/scripts.js"></script>
+      <!--  <script src="js/scripts.js"></script> -->
 
         <title>Ristorante Con Fusion</title>
 
@@ -146,9 +146,19 @@
 
                     <div class="col-12 col-sm-3 order-last align-self-center">
 
-                        <a role="button" class="btn btn-block btn-warning" data-toggle="tooltip" data-html="true"
-                            title="Or call us at +852 12345678" data-placement="bottom" href="#reserveForm"><strong>Reserve Table</strong></a>
+                        <!-- <a role="button" class="btn btn-block btn-warning" data-toggle="tooltip" data-html="true"
+                            title="Or call us at +852 12345678" data-placement="bottom" href="#reserveForm"><strong>Reserve Table</strong></a> -->
+                                                 
+                        <a data-toggle="modal" data-target="#reservationModal">
+                            
+                            <span  class="btn btn-block btn-warning" style="color:black">
+                                
+                                <strong>Reserve Table</strong>                             
 
+                            </span> 
+                        
+                        </a>                        
+                                                
                     </div>
 
                 </div>
@@ -156,7 +166,123 @@
             </div>
 
         </header>
-   
+
+        <!-- RERSERVE TABLE FORM -->
+        
+        <div id="reservationModal" class="modal fade" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="content">
+          
+                <div class="modal-content">
+          
+                    <div class="modal-header bg-primary text-white">
+                    
+                     <h4 class="modal-title">Reserve A Table</h4>
+                        
+                        <button type="button" class="close" data-dismiss="modal" style="color: white; font-size: 40px; margin-top: -3%; opacity: 1;">
+ 
+                            <strong>&times;</strong>    
+
+                        </button>                         
+
+                    </div>
+
+                    <div class="modal-body">                                           
+
+                        <form id="reservationForm">
+
+                            <div class="form-row row mb-2">
+
+                                <div class="form-group">                                                           
+                                                                 
+                                    <label class="col-12 col-sm-4 ml-2 order-first">Number of Guests:</label>
+                       
+                                    <span class="col-12 col-sm-8 order-last">
+
+                                        <input type="radio" id="one" name="guests" value="1">
+                                        <label for="one"><strong class="pl-1 pr-1">&nbsp;1&nbsp;</strong></label>                                    
+                                        <input type="radio" id="two" name="guests" value="2">
+                                        <label for="two"><strong class="pl-1 pr-1">&nbsp;2&nbsp;</strong></label>
+                                        <input type="radio" id="three" name="guests" value="3">
+                                        <label for="three"><strong class="pl-1 pr-1">&nbsp;3&nbsp;</strong></label>
+                                        <input type="radio" id="four" name="guests" value="4">
+                                        <label for="four"><strong class="pl-1 pr-1">&nbsp;4&nbsp;</strong></label>
+                                        <input type="radio" id="five" name="guests" value="5">
+                                        <label for="five"><strong class="pl-1 pr-1">&nbsp;5&nbsp;</strong></label>
+                                        <input type="radio" id="six" name="guests" value="6">
+                                        <label for="six"><strong class="pl-1 pr-1">&nbsp;6&nbsp;</strong></label>
+                                  
+                                    <span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-row row mb-2">
+
+                                <div class="form-group ml-4">
+
+                                    <label class="mr-2">Section:</label>
+
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        
+                                        <label class="btn btn-success active">
+
+                                            <input type="radio" name="section" id="non_smoking" autocomplete="off" checked>Non-Smoking
+
+                                        </label>    
+                             
+                                        <label class="btn btn-danger">
+
+                                            <input type="radio" name="section" id="smoking" autocomplete="off">Smoking 
+
+                                        </label>
+
+                                    </div>
+
+                                </div>                            
+
+                            </div>
+
+                            <div class="form-row row mb-2">
+                            
+                                <div class="form-group">                              
+
+                                    <div>
+                                
+                                        <label class="ml-4 mr-2">Date and Time: </label>
+
+                                        <input type="text" name="date" id="date" placeholder="Date">
+                                                                   
+                                        <input type="text" name="time" id="time" placeholder="Time">     
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-row row col-12 mb-2">
+
+                                <div class="form-group offset-2">
+
+                                    <input type="button" class="btn btn-secondary mr-1" name="cancelReservationBtn" id="cancelReservationBtn" value="Cancel">
+                                    
+                                    <button type="submit" class="btn btn-primary rounded">Reserve</button>       
+
+                                </div>
+
+                            </div>                                
+
+                        </form>                   
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>          
    
         <div class="container">
             
@@ -275,160 +401,68 @@
 
         </div>
 
-            <div class="container">
-
-                <div class="row row-content">
-
-                    <div class="col-12 col-sm-4 col-md-3 order-first align-self-center">
-
-                        <h3>This Month's Promotions</h3>
-
-                    </div>  
-
-                    <div class="col col-sm col-md align-self-center">
-
-                        <div class="media">
-
-                            <img class="d-flex img-thumbnail order-last" src="./img/buffet.png" alt="Buffet">
-                
-                            <div class="media-body mr-3">
-     
-                                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="container">
-
-                <div class="row row-content">
-
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3 align-self-center">            
-                
-                        <h3>Meet our Culinary Specialists</h3>
-            
-                    </div>
-           
-                    <div class="col col-sm order-sm-first col-md align-self-center">
-                    
-                        <div class="media">
-
-                            <img class="d-flex mr-3 img-thumbnail" src="./img/alberto.png" alt="Executive Chef">
-                
-                            <div class="media-body">
-     
-                                <h2 class="mt-0">Alberto Somayya</h2>
-                                <h4 class="mt-0">Executive Chef</h4>
-                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-
-                            </div>
-
-                        </div>
-            
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="container">
-
-                <div class="row row-content justify-content-center">
-
-                    <div class="col=12 col-sm-8">
-
-                        <div class="card" id="reserveForm">                                            
-
-                            <form>
-
-                                <div class="card-header bg-warning text-white pt-1 pb-1">
-                                
-                                    <h2 class="ml-4">Reserve A Table</h2> 
-                                
-                                </div>
-
-                                <div class="card-body">
-                            
-                                    <div class="row">
-
-                                        <div class="col-12 col-sm-2 order-sm-first">
-                                    
-                                            <label class="ml-1">Number of Guests</label>
-
-                                        </div>
-                         
-                                        <div class="col-12 col-sm-8 order-sm-last">
-
-                                            <input type="radio" id="one" name="guests" value="1">
-                                            <label for="one"><strong class="pl-1 pr-1">&nbsp;1&nbsp;</strong></label>                                    
-                                            <input type="radio" id="two" name="guests" value="2">
-                                            <label for="two"><strong class="pl-1 pr-1">&nbsp;2&nbsp;</strong></label>
-                                            <input type="radio" id="three" name="guests" value="3">
-                                            <label for="three"><strong class="pl-1 pr-1">&nbsp;3&nbsp;</strong></label>
-                                            <input type="radio" id="four" name="guests" value="4">
-                                            <label for="four"><strong class="pl-1 pr-1">&nbsp;4&nbsp;</strong></label>
-                                            <input type="radio" id="five" name="guests" value="5">
-                                            <label for="five"><strong class="pl-1 pr-1">&nbsp;5&nbsp;</strong></label>
-                                            <input type="radio" id="six" name="guests" value="6">
-                                            <label for="six"><strong class="pl-1 pr-1">&nbsp;6&nbsp;</strong></label>
-
-                                        </div>
-                                    
-                                    </div>
-
-                                    <div class="row mt-2">
-
-                                        <div class="col-12 col-sm-2 order-sm-first">
-
-                                            <label class="ml-1">Date and Time</label>
-
-                                        </div>
-
-                                        <div class="col-12 col-sm-4">
-
-                                            <input type="text" name="date" id="date" placeholder="Date">
-
-                                        </div>
-
-                                        <div class="col-12 col-sm-4 order-sm-last">
-                                        
-                                            <input type="text" name="time" id="time" placeholder="Time">                                      
-
-                                        </div>
-
-                                    </div>    
-                                
-                                    <div class="row mt-4 mb-4">
-
-                                        <div class="col-2 offset-sm-2">
-
-                                            <button type="submit" class="btn-primary rounded">Reserve</button> 
-
-                                        </div>
-
-                                    </div>                                                  
-
-                                </div>
-                        
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div class="container">
         
+            <div class="row row-content">               
+                
+                <div class="col-12 col-sm-4 col-md-3 order-first align-self-center">
 
+                    <h3>This Month's Promotions</h3>
+
+                </div>  
+
+                <div class="col col-sm col-md align-self-center">
+
+                    <div class="media">
+
+                        <img class="d-flex img-thumbnail order-last" src="./img/buffet.png" alt="Buffet">
+                
+                    <div class="media-body mr-3">
+     
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row row-content">
+
+                <div class="col-12 col-sm-4 order-sm-last col-md-3 align-self-center">            
+             
+                    <h3>Meet our Culinary Specialists</h3>
+            
+                </div>
+           
+                <div class="col col-sm order-sm-first col-md align-self-center">
+                    
+                    <div class="media">
+
+                        <img class="d-flex mr-3 img-thumbnail" src="./img/alberto.png" alt="Executive Chef">
+                
+                        <div class="media-body">
+     
+                            <h2 class="mt-0">Alberto Somayya</h2>
+                            <h4 class="mt-0">Executive Chef</h4>
+                            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+
+                        </div>
+
+                    </div>
+            
+                </div>
+
+            </div>
+
+        </div>
+      
         <footer class="footer">
             
             <div class="container">
@@ -496,22 +530,18 @@
             
             </div>
 
-        </footer>
-        
-       <!-- <script>
+        </footer>       
 
-            $(document).ready(function(){
-
-                $('[data-toggle="tooltip"]').tooltip();
-
-            })
-
-        </script> -->
+        <!-- Local 
+            
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->        
         
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+           
 
     </body>
 
