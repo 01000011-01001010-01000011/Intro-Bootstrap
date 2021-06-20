@@ -5,6 +5,8 @@
     "bootstrap": "5.0",
     "bootstrap-social": "^5.1.1",
     "cssmin": "^0.4.3",
+    "grunt": "^1.4.1",
+    "gulp": "^4.0.2",
     "htmlmin": "^0.0.7",
     "jquery": "^3.6.0",
     "jsdom": "^16.6.0",
@@ -18,10 +20,27 @@
   "description": "Intro Bootstrap",
   "main": "index.html",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "image-min": "^0.3.2",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.0",
     "onchange": "^7.1.0",
-    "parallelshell": "^3.0.2"
+    "parallelshell": "^3.0.2",
+    "time-grunt": "^2.0.0"
   },
   "scripts": {
     "start": "npm run watch:all",
@@ -34,7 +53,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run usemin" 
+    "build": "npm run clean && npm run usemin"
   },
   "repository": {
     "type": "git",
